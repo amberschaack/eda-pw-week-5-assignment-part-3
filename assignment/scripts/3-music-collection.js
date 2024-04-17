@@ -23,6 +23,23 @@ console.log(addToCollection(myCollection, 'Purgatory', 'Tyler Childers', 2017));
 console.log(
   addToCollection(myCollection, 'Happier Than Ever', 'Billie Eilish', 2021)
 );
+console.log(
+  addToCollection(myCollection, 'Country Squire', 'Tyler Childers', 2019)
+);
+console.log(
+  addToCollection(myCollection, 'digital druglord', 'blackbear', 2017)
+);
+
+console.log(myCollection);
+
+function showCollection(collection) {
+  for (i = 0; i < collection.length; i++) {
+    console.log(
+      `${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`
+    );
+  }
+}
+showCollection(myCollection);
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
