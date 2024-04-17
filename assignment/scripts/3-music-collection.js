@@ -44,15 +44,39 @@ showCollection(myCollection);
 function findByArtist(collection, artist) {
   let matches = [];
   for (i = 0; i < collection.length; i++) {
-      if (collection[i].artist === artist) {
-        matches.push(collection[i]);
-      }
+    if (collection[i].artist === artist) {
+      matches.push(collection[i]);
     }
-    return matches;
   }
+  return matches;
+}
 
-  console.log(findByArtist(myCollection, 'Halsey'));
-  console.log(findByArtist(myCollection, 'blackbear'));
+console.log(findByArtist(myCollection, 'Halsey'));
+console.log(findByArtist(myCollection, 'blackbear'));
+
+let searchCriteria = { artist: 'blackbear', year: 2019 };
+function search(collection, searchCriteria) {
+  let newCollection = [];
+  if (
+    !searchCriteria ||
+    Object.keys(searchCriteria).length === 0 ||
+    !searchCriteria.artist ||
+    !searchCriteria.year
+  ) {
+    return collection;
+  }
+  for (i = 0; i < collection.length; i++) {
+    if (
+      collection[i].artist === searchCriteria.artist &&
+      collection[i].yearPublished === searchCriteria.year
+    ) {
+      newCollection.push(collection[i]);
+    }
+  }
+  return newCollection;
+}
+
+console.log(search(myCollection, searchCriteria));
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
