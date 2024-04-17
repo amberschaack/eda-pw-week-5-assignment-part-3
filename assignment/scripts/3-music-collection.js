@@ -41,6 +41,19 @@ function showCollection(collection) {
 }
 showCollection(myCollection);
 
+function findByArtist(collection, artist) {
+  let matches = [];
+  for (i = 0; i < collection.length; i++) {
+      if (collection[i].artist === artist) {
+        matches.push(collection[i]);
+      }
+    }
+    return matches;
+  }
+
+  console.log(findByArtist(myCollection, 'Halsey'));
+  console.log(findByArtist(myCollection, 'blackbear'));
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
