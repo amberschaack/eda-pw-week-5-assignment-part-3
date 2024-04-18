@@ -51,7 +51,6 @@ const digitalTracks = [
   { number: 3, name: 'moodz', duration: '2:34' },
 ];
 
-/*
 function addToCollection(collection, title, artist, yearPublished) {
   const album = {
     collection: collection,
@@ -62,10 +61,30 @@ function addToCollection(collection, title, artist, yearPublished) {
   collection.push(album);
   return album;
 }
-*/
+
+console.log(addToCollection(myCollection, 'Badlands', 'Halsey', 2015));
+console.log(addToCollection(myCollection, 'ANONYMOUS', 'blackbear', 2019));
+console.log(
+  addToCollection(myCollection, 'Roll the Bones', 'Shakey Graves', 2011)
+);
+console.log(
+  addToCollection(myCollection, 'Funhouse', 'Pink', 2008, funhouseTracks)
+);
+console.log(addToCollection(myCollection, 'Purgatory', 'Tyler Childers', 2017));
+console.log(
+  addToCollection(myCollection, 'Happier Than Ever', 'Billie Eilish', 2021)
+);
+console.log(
+  addToCollection(myCollection, 'Country Squire', 'Tyler Childers', 2019)
+);
+console.log(
+  addToCollection(myCollection, 'digital druglord', 'blackbear', 2017)
+);
+
+console.log(myCollection);
 
 // extra stretchy addToCollection
-
+/*
 function addToCollection(collection, title, artist, yearPublished, tracks) {
   const album = {
     collection: collection,
@@ -134,8 +153,8 @@ console.log(
 );
 
 console.log(myCollection);
+*/
 
-/*
 function showCollection(collection) {
   for (i = 0; i < collection.length; i++) {
     console.log(
@@ -143,10 +162,10 @@ function showCollection(collection) {
     );
   }
 }
-*/
+showCollection(myCollection);
 
 // extra stretchy showCollection
-
+/*
 function showCollection(collection) {
   for (i = 0; i < collection.length; i++) {
     console.log(
@@ -158,6 +177,7 @@ function showCollection(collection) {
   }
 }
 showCollection(myCollection);
+*/
 
 function findByArtist(collection, artist) {
   let matches = [];
@@ -176,7 +196,6 @@ console.log(findByArtist(myCollection, 'blackbear'));
 
 // begin stretch goals
 
-/*
 let searchCriteria = { artist: 'blackbear', year: 2019 };
 function search(collection, searchCriteria) {
   let newCollection = [];
@@ -198,10 +217,12 @@ function search(collection, searchCriteria) {
   }
   return newCollection;
 }
-*/
+
+console.log(search(myCollection, searchCriteria));
 
 // extra stretchy searchCriteria
 
+/*
 let searchCriteria = { artist: 'blackbear', year: 2017, track: 'moodz' };
 function search(collection, searchCriteria) {
   for (i = 0; i < collection.length; i++) {
@@ -218,6 +239,7 @@ function search(collection, searchCriteria) {
 }
 
 console.log(search(myCollection, searchCriteria));
+*/
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
