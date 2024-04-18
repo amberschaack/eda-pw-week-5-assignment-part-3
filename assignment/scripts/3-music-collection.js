@@ -82,15 +82,26 @@ function search(collection, searchCriteria) {
 
 console.log(search(myCollection, searchCriteria));
 
-let tracks0 = [{name: ['Drive', 'Castle', 'Ghost']}, {duration: [4:19, 4:38, 2:34]}];
-let tracks1 = [{name: ['PINK ROLEX', 'MAKE A MESS', 'CHANGES'] }, {duration: [2:17, 2:40, 2:34]}];
-let tracks2 = [{name: ['Unlucky Sin', 'Georgia Moon', 'Built to Roam']}, {duration: [3:18, 2:43, 3:11]}];
-let tracks3 = [{name: ['So What', 'Sober', 'Crystal Ball']}, {duration: [3:35, 4:12, 3:26]}];
-let tracks4 = [{name: ['I Swear', 'Tattoos', 'Whitehouse Road']}, {duration: [3:21, 3:23, 4:41]}];
-let tracks5 = [{name: ['Getting Older', 'Oxytocin', 'Lost Cause']}, {duration: [4:04, 3:30, 3:32]}];
-let tracks6 = [{name: ['Creeker', 'House Fire', 'Peace of Mind']}, {duration: [5:01, 3:52, 4:42]}];
-let tracks7 = [{name: ['wish u the best', 'double', 'moodz']}, {duration: [2:34, 3:00, 3:41]}];
+/*
+let tracks0 = [{name: ['Drive', 'Castle', 'Ghost']}, {duration: ['4:19', '4:38', '2:34']}];
+let tracks1 = [{name: ['PINK ROLEX', 'MAKE A MESS', 'CHANGES'] }, {duration: ['2:17', '2:40', '2:34']}];
+let tracks2 = [{name: ['Unlucky Sin', 'Georgia Moon', 'Built to Roam']}, {duration: ['3:18', '2:43', '3:11']}];
+let tracks3 = [{name: ['So What', 'Sober', 'Crystal Ball']}, {duration: ['3:35', '4:12', '3:26']}];
+let tracks4 = [{name: ['I Swear', 'Tattoos', 'Whitehouse Road']}, {duration: ['3:21', '3:23', '4:41']}];
+let tracks5 = [{name: ['Getting Older', 'Oxytocin', 'Lost Cause']}, {duration: ['4:04', '3:30', '3:32']}];
+let tracks6 = [{name: ['Creeker', 'House Fire', 'Peace of Mind']}, {duration: ['5:01', '3:52', '4:42']}];
+let tracks7 = [{name: ['wish u the best', 'double', 'moodz']}, {duration: ['2:34', '3:00', '3:41']}];
 
+Obj['tracks'].myCollection[0].push(tracks0);
+console.log(myCollection[0]);
+myCollection[1].push(tracks1);
+myCollection[2].push(tracks2);
+myCollection[3].push(tracks3);
+myCollection[4].push(tracks4);
+myCollection[5].push(tracks5);
+myCollection[6].push(tracks6);
+myCollection[7].push(tracks7);
+*/
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
