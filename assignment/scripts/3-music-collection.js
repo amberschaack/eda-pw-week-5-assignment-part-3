@@ -53,10 +53,10 @@ const digitalTracks = [
 
 function addToCollection(collection, title, artist, yearPublished) {
   const album = {
-    collection: collection,
-    title: title,
-    artist: artist,
-    yearPublished: yearPublished,
+    collection,
+    title,
+    artist,
+    yearPublished,
   };
   collection.push(album);
   return album;
